@@ -13,13 +13,17 @@ public class JavalinSingleton {
      *
      * Please refer to the "PathParameters.MD" file.
      */
+    public static void main(String [] args){
+
+    }
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
 
         app.get("/firstname/{first}", ctx -> {
             
             //write code here
-
+            String first = ctx.pathParam("first");
+            ctx.result(first);
         });
 
         return app;
