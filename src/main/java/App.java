@@ -18,6 +18,8 @@ public class App
      * There is no need to change anything in this class. It exists for you to be able to interact with a Javalin server
      * yourself.
      */
+
+    
     public static void main( String[] args )
     {
         Javalin app = JavalinSingleton.getInstance();
